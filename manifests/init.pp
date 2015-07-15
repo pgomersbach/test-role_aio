@@ -13,4 +13,10 @@ class role_aio
   include ::profile_base
   # include rspec monitor to make rspec acceptance test available to monitor system
   include ::profile_base::rspec_monitor
+
+  include ::profile_jenkins
+  include ::profile_jenkins::rspec_monitor
+
+  include ::profile_puppetmaster
+  include ::profile_puppetmaster::rspec_monitor
 }

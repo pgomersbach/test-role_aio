@@ -4,8 +4,27 @@ fixtures:
  
 # role module layout, include profile base and ntp module
     profile_base: "https://github.com/pgomersbach/test-profile_base.git"
+    profile_jenkins: "https://github.com/pgomersbach/test-profile_jenkins.git"
+    profile_puppetmaster: "https://github.com/pgomersbach/test-profile_puppetmaster.git"
+
     ntp: "https://github.com/puppetlabs/puppetlabs-ntp.git"
     rspec_monitor: "git://github.com/pgomersbach/test-rspec_monitor.git"
+    ntp: "https://github.com/puppetlabs/puppetlabs-ntp.git"
+    inifile: "https://github.com/puppetlabs/puppetlabs-inifile"
+    jenkins: "https://github.com/jenkinsci/puppet-jenkins.git"
+    java: "https://github.com/puppetlabs/puppetlabs-java.git"
+    apt: "https://github.com/puppetlabs/puppetlabs-apt"
+    staging: "https://github.com/nanliu/puppet-staging"
+    archive: "https://github.com/camptocamp/puppet-archive.git"
+    jenkins_job_builder: "https://github.com/puppet-community/puppet-jenkins_job_builder.git"
+
+    apache: "https://github.com/puppetlabs/puppetlabs-apache.git"
+    puppetdb: "https://github.com/puppetlabs/puppetlabs-puppetdb.git"
+    postgresql: 'git://github.com/puppetlabs/puppet-postgresql.git'
+    firewall: 'git://github.com/puppetlabs/puppetlabs-firewall.git'
+    file_concat: "git://github.com/electrical/puppet-lib-file_concat.git"
+    concat: "git://github.com/puppetlabs/puppetlabs-concat"
+
 
   symlinks:
     role_aio: "#{source_dir}"

@@ -17,9 +17,9 @@ describe 'role_aio class' do
         class { 'role_aio': }
         EOS
 
-        # Run it twice and test for idempotency
+        apply_manifest(pp, :catch_failures => false, :future_parser => true)
+        sleep(10) # Jenkins takes a while to start up
         apply_manifest(pp, :catch_failures => true, :future_parser => true)
-        apply_manifest(pp, :catch_changes  => true, :future_parser => true)
       end
     end
 
