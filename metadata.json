@@ -1,0 +1,24 @@
+{
+  "name": "test-role_aio",
+  "version": "0.1.0",
+  "author": "P. Gomersbach",
+  "summary": "All in one role",
+  "license": "Apache-2.0",
+  "source": "https://github.com/pgomersbach/test-role_aio.git",
+  "project_page": "https://github.com/pgomersbach/test-role_aio",
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_requirement": ">= 1.0.0"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Ubuntu",
+      "operatingsystemrelease": [
+        "12.04",
+        "14.04"
+      ]
+    }
+  ]
+}
