@@ -10,13 +10,14 @@
 class role_aio
 {
   # a role includes one or more profiles and at least a 'base' profile
-  contain ::profile_base
+  include ::profile_base
   # include rspec monitor to make rspec acceptance test available to monitor system
-  contain ::profile_base::rspec_monitor
-  contain ::profile_jenkins
-  contain ::profile_jenkins::rspec_monitor
-  contain ::profile_puppetmaster
-  contain ::profile_puppetmaster::rspec_monitor
+  include ::profile_base::rspec_monitor
 
-  Class['::profile_base'] -> Class['::profile_jenkins'] -> Class['::profile_puppetmaster']
+  include ::profile_jenkins
+  include ::profile_jenkins::rspec_monitor
+
+  include ::profile_puppetmaster
+  include ::profile_puppetmaster::rspec_monitor
+
 }
