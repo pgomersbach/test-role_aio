@@ -6,7 +6,7 @@ fixtures:
     profile_base: "https://github.com/pgomersbach/test-profile_base.git"
     profile_jenkins: "https://github.com/pgomersbach/test-profile_jenkins.git"
     profile_puppetmaster: "https://github.com/pgomersbach/test-profile_puppetmaster.git"
-    profile_puppetmaster: "https://github.com/pgomersbach/test-profile_mcollective.git"
+    profile_mcollective: "https://github.com/pgomersbach/test-profile_mcollective.git"
 
     ntp: "https://github.com/puppetlabs/puppetlabs-ntp.git"
     rspec_monitor: "git://github.com/pgomersbach/test-rspec_monitor.git"
