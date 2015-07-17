@@ -20,4 +20,7 @@ class role_aio
   include ::profile_puppetmaster
   include ::profile_puppetmaster::rspec_monitor
 
+  include ::profile_mcollective
+  include ::profile_mcollective::rspec_monitor
+
 }

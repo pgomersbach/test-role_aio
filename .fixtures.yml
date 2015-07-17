@@ -6,9 +6,13 @@ fixtures:
     profile_base: "https://github.com/pgomersbach/test-profile_base.git"
     profile_jenkins: "https://github.com/pgomersbach/test-profile_jenkins.git"
     profile_puppetmaster: "https://github.com/pgomersbach/test-profile_puppetmaster.git"
+    profile_puppetmaster: "https://github.com/pgomersbach/test-profile_mcollective.git"
 
     ntp: "https://github.com/puppetlabs/puppetlabs-ntp.git"
     rspec_monitor: "git://github.com/pgomersbach/test-rspec_monitor.git"
+    mcollective: "https://github.com/puppet-community/puppet-mcollective.git"
+    datacat: "https://github.com/richardc/puppet-datacat.git"
+    rabbitmq: "https://github.com/puppetlabs/puppetlabs-rabbitmq.git"
     ntp: "https://github.com/puppetlabs/puppetlabs-ntp.git"
     inifile: "https://github.com/puppetlabs/puppetlabs-inifile"
     jenkins: "https://github.com/jenkinsci/puppet-jenkins.git"
