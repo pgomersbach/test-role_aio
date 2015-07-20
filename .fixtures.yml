@@ -7,6 +7,7 @@ fixtures:
     profile_jenkins: "https://github.com/pgomersbach/test-profile_jenkins.git"
     profile_puppetmaster: "https://github.com/pgomersbach/test-profile_puppetmaster.git"
     profile_mcollective: "https://github.com/pgomersbach/test-profile_mcollective.git"
+    profile_rundeck: "https://github.com/pgomersbach/test-profile_rundeck.git"
 
     ntp: "https://github.com/puppetlabs/puppetlabs-ntp.git"
     rspec_monitor: "git://github.com/pgomersbach/test-rspec_monitor.git"
@@ -28,6 +29,7 @@ fixtures:
     firewall: 'git://github.com/puppetlabs/puppetlabs-firewall.git'
     file_concat: "git://github.com/electrical/puppet-lib-file_concat.git"
     concat: "git://github.com/puppetlabs/puppetlabs-concat"
+    rundeck: "https://github.com/puppet-community/puppet-rundeck.git"
 
 
   symlinks:

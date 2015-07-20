@@ -21,7 +21,8 @@ describe 'role_aio' do
           it { is_expected.to contain_class('profile_jenkins::rspec_monitor') }
           it { is_expected.to contain_class('profile_puppetmaster') }
           it { is_expected.to contain_class('profile_puppetmaster::rspec_monitor') }
-
+          it { is_expected.to contain_class('profile_rundeck') }
+          it { is_expected.to contain_class('profile_rundeck::rspec_monitor') }
         end
       end
     end
