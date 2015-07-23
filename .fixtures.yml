@@ -16,6 +16,7 @@ fixtures:
     rabbitmq: "https://github.com/puppetlabs/puppetlabs-rabbitmq.git"
     ntp: "https://github.com/puppetlabs/puppetlabs-ntp.git"
     inifile: "https://github.com/puppetlabs/puppetlabs-inifile"
+    vcsrepo: "https://github.com/puppetlabs/puppetlabs-vcsrepo"
     jenkins: "https://github.com/jenkinsci/puppet-jenkins.git"
     java: "https://github.com/puppetlabs/puppetlabs-java.git"
     apt: "https://github.com/puppetlabs/puppetlabs-apt"
