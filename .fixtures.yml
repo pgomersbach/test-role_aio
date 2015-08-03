@@ -21,7 +21,7 @@ fixtures:
     java: "https://github.com/puppetlabs/puppetlabs-java.git"
     apt: "https://github.com/puppetlabs/puppetlabs-apt"
     staging: "https://github.com/nanliu/puppet-staging"
-    archive: "https://github.com/puppet-community/puppet-archive.git"
+    archive: "https://github.com/camptocamp/puppet-archive.git"
     jenkins_job_builder: "https://github.com/puppet-community/puppet-jenkins_job_builder.git"
 
     apache: "https://github.com/puppetlabs/puppetlabs-apache.git"
