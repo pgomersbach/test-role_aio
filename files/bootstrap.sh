@@ -53,4 +53,4 @@ echo "Preparing modules"
 bundle exec rake spec_prep
 cp -a spec/fixtures/modules/* /etc/puppet/modules/
 echo "Run puppet"
-puppet apply -e "class {'role_aio':"}"
+puppet apply -e "class {'role_aio':}"
