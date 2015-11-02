@@ -45,7 +45,7 @@ echo "Installing Puppet..."
 DEBIAN_FRONTEND=noninteractive apt-get -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" install puppetmaster >/dev/null
 echo "Puppet installed!"
 echo "Cloning repo"
-git clone https://github.com/pgomersbach/role_aio.git
+git clone https://github.com/pgomersbach/test-role_aio.git role_aio
 cd role_aio
 echo "Installing gems"
 bundle install --path vendor/bundle
