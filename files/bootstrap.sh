@@ -46,6 +46,6 @@ echo "Installing gems"
 bundle install --path vendor/bundle
 echo "Preparing modules"
 bundle exec rake spec_prep
-cp -a spec/fixtures/modules/* /etc/puppet/modules/
+cp -a /root/role_aio/spec/fixtures/modules/* /etc/puppetlabs/code/modules/
 echo "Run puppet"
 /opt/puppetlabs/bin/puppet apply -e "include role_aio"
