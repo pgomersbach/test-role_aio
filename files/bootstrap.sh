@@ -20,11 +20,6 @@ if [ "$(id -u)" != "0" ]; then
   exit 1
 fi
 
-if which puppet > /dev/null 2>&1 -a apt-cache policy | grep --quiet apt.puppetlabs.com; then
-  echo "Puppet is already installed."
-  exit 0
-fi
-
 # Do the initial apt-get update
 echo "Initial apt-get update..."
 apt-get update >/dev/null
@@ -42,7 +37,7 @@ apt-get update >/dev/null
 
 # Install Puppet
 echo "Installing Puppet..."
-DEBIAN_FRONTEND=noninteractive apt-get -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" install puppetmaster >/dev/null
+DEBIAN_FRONTEND=noninteractive apt-get -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" install puppetserver >/dev/null
 echo "Puppet installed!"
 echo "Cloning repo"
 git clone https://github.com/pgomersbach/test-role_aio.git role_aio
@@ -53,4 +48,4 @@ echo "Preparing modules"
 bundle exec rake spec_prep
 cp -a spec/fixtures/modules/* /etc/puppet/modules/
 echo "Run puppet"
-puppet apply -e "class {'role_aio':}"
+/opt/puppetlabs/bin/puppet apply -e "include role_aio"
