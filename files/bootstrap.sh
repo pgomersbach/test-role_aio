@@ -43,7 +43,7 @@ apt-get -y  install puppetserver >/dev/null
 echo "Puppet installed!"
 echo "Cloning repo"
 git clone https://github.com/pgomersbach/test-role_aio.git /root/role_aio
-cd role_aio
+cd /root/role_aio
 echo "Installing gems"
 bundle install --path vendor/bundle
 echo "Preparing modules"
