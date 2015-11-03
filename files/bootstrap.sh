@@ -28,7 +28,7 @@ apt-get update >/dev/null
 
 # Install git bundler
 echo "Installing git, bundler..."
-apt-get -y install -y git bundler zlib1g-dev >/dev/null
+apt-get -y install git bundler zlib1g-dev >/dev/null
 
 # Install the PuppetLabs repo
 echo "Configuring PuppetLabs repo..."
