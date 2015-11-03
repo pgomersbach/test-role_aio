@@ -15,6 +15,8 @@ REPO_DEB_URL="http://apt.puppetlabs.com/puppetlabs-release-pc1-trusty.deb"
 #--------------------------------------------------------------------
 # NO TUNABLES BELOW THIS POINT
 #--------------------------------------------------------------------
+export DEBIAN_FRONTEND=noninteractive
+
 if [ "$(id -u)" != "0" ]; then
   echo "This script must be run as root." >&2
   exit 1
@@ -26,7 +28,7 @@ apt-get update >/dev/null
 
 # Install git bundler
 echo "Installing git, bundler..."
-apt-get install -y git bundler zlib1g-dev >/dev/null
+apt-get -y install -y git bundler zlib1g-dev >/dev/null
 
 # Install the PuppetLabs repo
 echo "Configuring PuppetLabs repo..."
@@ -37,10 +39,10 @@ apt-get update >/dev/null
 
 # Install Puppet
 echo "Installing Puppet..."
-DEBIAN_FRONTEND=noninteractive apt-get -y -o Dpkg::Options::="--force-confdef" -o Dpkg::Options::="--force-confold" install puppetserver >/dev/null
+apt-get -y  install puppetserver >/dev/null
 echo "Puppet installed!"
 echo "Cloning repo"
-git clone https://github.com/pgomersbach/test-role_aio.git role_aio
+git clone https://github.com/pgomersbach/test-role_aio.git /root/role_aio
 cd role_aio
 echo "Installing gems"
 bundle install --path vendor/bundle
